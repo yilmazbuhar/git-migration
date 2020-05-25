@@ -5,3 +5,26 @@ Git file system backup.
 .\git_backup.ps1 platformName
 
 Supported Platforms github, bitbucket
+
+### Configuration
+
+Github configuration
+```
+{
+	"username":"{username}",
+	"password":"{password}",
+	"apiurl":"https://api.github.com/user/repos?per_page=100&page=",
+	"giturl":"https://{username}@github.com"
+}
+```
+
+Bitbucket configuration
+```
+{
+	"username":"{username}",
+	"password":"{password}",
+	"apiurl":"https://api.bitbucket.org/2.0/repositories/{workspace}?pagelen=100&page=",
+	"giturl":"https://{username}@bitbucket.org"
+}
+```
+
