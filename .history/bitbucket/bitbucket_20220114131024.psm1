@@ -14,5 +14,10 @@ Function GitClone([Object[]] $config, [Object[]] $response)
 			git push --mirror
 				
 			cd ..
+		
+	#$location = Get-Location
+	#$rmfolder = ("$location" + "\$slug").toString()
+	#$rmfolder
+	#Remove-Item $rmfolder -recurse -force
     }
 }
