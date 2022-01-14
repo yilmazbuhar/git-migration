@@ -11,7 +11,7 @@ $pair = "$($config.username):$($config.password)"
 $encodedCredentials = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
 $basicAuthValue = 'Basic '+$encodedCredentials
 
-$folderName = Get-Date -Format “MMddyyyy-HH-mm”
+$folderName = Get-Date -Format "MMddyyyy-HH-mm"
 md $commandPath/$folderName
 Set-Location $commandPath/$folderName
 
@@ -36,4 +36,3 @@ For ($i=1; $i -le $size; $i++) {
 
     GitClone -config $config -response $response
 }
-
