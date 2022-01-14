@@ -7,8 +7,8 @@ Function GitClone([Object[]] $config, [Object[]] $response)
         cd $slug".git"
 
         git remote set-url --push origin $($config.destinationAddress + $slug)
-		git config http.sslVerify false
-		git push --mirror
+	git config http.sslVerify false
+	git push --mirror
 
         cd ..
     }
