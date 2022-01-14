@@ -3,6 +3,5 @@
 	"password":"{password}",
 	"apiurl":"https://api.bitbucket.org/2.0/repositories/{workspace}?pagelen=100&page=",
 	"giturl":"https://{username}@bitbucket.org",
-	"destinationAddress":"https:***",
-	"sourceGroup":"",
+	"destinationAddress":"https:***"
 }
